@@ -3,7 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import NavBar from "./NavBar";
 import Content from "./Content";
 import Iframe from "react-iframe";
-import { stringQuartet } from "../../store";
+import { comPoser } from "../../store";
 
 const style = {
   Paper: {
@@ -18,7 +18,7 @@ const style = {
 };
 
 const Portfolio = ({ artwork }) => {
-  const [artworkArray, setArtworkArray] = useState(stringQuartet);
+  const [artworkArray, setArtworkArray] = useState(comPoser);
   return (
     <Grid style={style.Body} container>
       <Grid item xs={2} container>

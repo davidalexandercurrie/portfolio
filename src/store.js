@@ -48,6 +48,26 @@ export const socketAV = [
   }
 ];
 
+export const comPoser = [
+  {
+    url: "https://davidalexandercurrie.github.io/ComPoser/",
+    type: "iframe",
+    key: "2",
+    width: "1280px",
+    height: "720px"
+  }
+];
+
+export const upcycle = [
+  {
+    url: "http://upcycle.tech/",
+    type: "iframe",
+    key: "3",
+    width: "1280px",
+    height: "720px"
+  }
+];
+
 export const About = [
   {
     textContent: "Hi my name is David",

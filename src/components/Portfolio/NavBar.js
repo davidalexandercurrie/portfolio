@@ -1,6 +1,13 @@
 import React from "react";
 import { List, ListItem, ListItemText, Drawer } from "@material-ui/core";
-import { stringQuartet, socketAV, About, Contact } from "../../store";
+import {
+  upcycle,
+  stringQuartet,
+  socketAV,
+  comPoser,
+  About,
+  Contact
+} from "../../store";
 
 const styles = {
   TopList: { padding: 20, marginTop: 10 }
@@ -16,10 +23,18 @@ const NavBar = ({ setArtworkArray }) => {
             <ListItem
               button
               onClick={() => {
-                setArtworkArray(stringQuartet);
+                setArtworkArray(upcycle);
               }}
             >
-              <ListItemText primary="String Quartet" />
+              <ListItemText primary="UpCycle" />
+            </ListItem>
+            <ListItem
+              button
+              onClick={() => {
+                setArtworkArray(comPoser);
+              }}
+            >
+              <ListItemText primary="ComPoser" />
             </ListItem>
             <ListItem
               button
@@ -28,6 +43,14 @@ const NavBar = ({ setArtworkArray }) => {
               }}
             >
               <ListItemText primary="Socket AV" />
+            </ListItem>
+            <ListItem
+              button
+              onClick={() => {
+                setArtworkArray(stringQuartet);
+              }}
+            >
+              <ListItemText primary="String Quartet" />
             </ListItem>
           </List>
         </List>
